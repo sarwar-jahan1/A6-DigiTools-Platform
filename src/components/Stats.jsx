@@ -2,7 +2,7 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <div className="w-full bg-gradient-to-r from-purple-600 to-purple-800 py-12">
+    <div className="w-full bg-gradient-to-r from-purple-600 to-purple-800 py-6">
       {/* Full width content */}
       <div className="flex flex-col md:flex-row items-center justify-center text-white text-center">
         {/* Item 1 */}

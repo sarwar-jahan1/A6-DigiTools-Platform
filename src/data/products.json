@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes with AI assistance in minutes.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "FaFileAlt"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Generator",
+    "description": "Build a stunning portfolio website without coding.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best",
+    "features": ["Custom domains", "Responsive design", "SEO optimized"],
+    "icon": "FaLaptopCode"
+  },
+  {
+    "id": 3,
+    "name": "AI Copywriting Tool",
+    "description": "Generate high-converting marketing copy instantly.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Ad copy", "Email templates", "SEO content"],
+    "icon": "FaPenNib"
+  },
+  {
+    "id": 4,
+    "name": "Design Assets Kit",
+    "description": "Access thousands of premium UI and graphic assets.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Icons", "Illustrations", "UI kits"],
+    "icon": "FaPaintBrush"
+  },
+  {
+    "id": 5,
+    "name": "Social Media Scheduler",
+    "description": "Plan and automate your social media posts easily.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best",
+    "features": ["Auto scheduling", "Analytics", "Multi-platform"],
+    "icon": "FaCalendarAlt"
+  },
+  {
+    "id": 6,
+    "name": "Landing Page Builder",
+    "description": "Create high-converting landing pages quickly.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Drag & drop", "Templates", "Fast loading"],
+    "icon": "FaLayerGroup"
+  },
+  {
+    "id": 7,
+    "name": "AI Image Generator",
+    "description": "Generate stunning images using AI prompts.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["HD images", "Custom styles", "Fast rendering"],
+    "icon": "FaImage"
+  },
+  {
+    "id": 8,
+    "name": "Email Marketing Tool",
+    "description": "Send and manage email campaigns بسهولة.",
+    "price": 20,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best",
+    "features": ["Email templates", "Automation", "Analytics"],
+    "icon": "FaEnvelope"
+  },
+  {
+  "id": 9,
+  "name": "AI Video Editor",
+  "description": "Edit and generate professional videos with AI tools بسهولة.",
+  "price": 35,
+  "period": "monthly",
+  "tag": "Popular",
+  "tagType": "popular",
+  "features": ["Auto editing", "Transitions", "HD export"],
+  "icon": "FaVideo"
+}
+]
