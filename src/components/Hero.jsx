@@ -46,7 +46,8 @@ const Hero = () => {
           {/* Right Image */}
           <div className="w-full">
             <img
-              src="../../assets/banner.png" // 👉 তোর image path বসাবি
+              // src="../../assets/banner.png" 
+              src="../../assets/banner.png"
               alt="hero"
               className="w-full max-w-md mx-auto rounded-xl object-cover"
             />
