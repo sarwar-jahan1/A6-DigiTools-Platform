@@ -17,10 +17,9 @@ function App() {
   return (
     <>
       <Navbar cart={cart} />
-      <Products cart={cart} setCart={setCart} />
       <Hero></Hero>
+      <Products cart={cart} setCart={setCart} />
       <Stats></Stats>
-      <Products></Products>
       <Steps></Steps>
       <Pricing></Pricing>
       <CTA></CTA>

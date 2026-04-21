@@ -1,11 +1,18 @@
-// src/components/ProductCard.jsx
-
 import * as Icons from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
-// 👉 addToCart prop add করতে হবে
-const ProductCard = ({ product, addToCart }) => {
+const ProductCard = ({ product, addToCart, cart = [] }) => {
   const Icon = Icons[product.icon];
+
+  const [added, setAdded] = useState(false);
+
+  useEffect(() => {
+    if (!cart) return;
+
+    const exists = cart.some((item) => item.id === product.id);
+    setAdded(exists);
+  }, [cart, product.id]);
 
   return (
     <div className="bg-white rounded-xl p-6 text-left shadow-sm hover:shadow-lg transition duration-300 hover:-translate-y-1 relative">
@@ -52,12 +59,25 @@ const ProductCard = ({ product, addToCart }) => {
         ))}
       </ul>
 
-      {/* Button (FIXED) */}
+      {/* Button */}
       <button
-        onClick={() => addToCart(product)} // 👉 MAIN FIX
-        className="w-full mt-6 bg-gradient-to-r from-purple-600 to-purple-800 text-white py-2 rounded-full text-sm hover:opacity-90 transition"
+        onClick={() => addToCart(product)}
+        disabled={added}
+        className={`w-full mt-6 py-2 rounded-full text-sm transition flex items-center justify-center gap-2
+          ${
+            added
+              ? "bg-green-500 text-white cursor-not-allowed"
+              : "bg-gradient-to-r from-purple-600 to-purple-800 text-white hover:opacity-90"
+          }
+        `}
       >
-        Buy Now
+        {added ? (
+          <>
+            <FaCheck /> Added to Cart
+          </>
+        ) : (
+          "Buy Now"
+        )}
       </button>
     </div>
   );
