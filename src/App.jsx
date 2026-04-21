@@ -1,4 +1,3 @@
-
 import './App.css'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
@@ -9,7 +8,8 @@ import Products from './components/Products'
 import Stats from './components/Stats'
 import Steps from './components/Steps'
 import { useState } from "react";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -17,13 +17,19 @@ function App() {
   return (
     <>
       <Navbar cart={cart} />
-      <Hero></Hero>
+
+      <Hero />
+      <Stats />
+
       <Products cart={cart} setCart={setCart} />
-      <Stats></Stats>
-      <Steps></Steps>
-      <Pricing></Pricing>
-      <CTA></CTA>
-      <Footer></Footer>
+
+      <Steps />
+      <Pricing />
+      <CTA />
+      <Footer />
+
+      {/* Toast */}
+      <ToastContainer position="top-center" autoClose={2000} />
     </>
   );
 }
