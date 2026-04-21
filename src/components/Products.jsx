@@ -13,7 +13,7 @@ const Products = ({ cart, setCart }) => {
   return (
     <div className="w-full bg-[#f3f4f6] py-16">
       <div className="max-w-5xl mx-auto px-4 text-center">
-        {/* Title */}
+        
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           Premium Digital Tools
         </h2>
@@ -22,7 +22,6 @@ const Products = ({ cart, setCart }) => {
           Choose from our curated collection of premium digital products...
         </p>
 
-        {/* Buttons */}
         <div className="flex justify-center gap-3 mt-6">
           <button
             onClick={() => setActiveTab("products")}
@@ -43,7 +42,6 @@ const Products = ({ cart, setCart }) => {
           </button>
         </div>
 
-        {/* PRODUCTS */}
         {activeTab === "products" && (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
             {products.map((product) => (
@@ -69,7 +67,6 @@ const Products = ({ cart, setCart }) => {
               </div>
             ) : (
               <>
-                {/* Cart Items */}
                 {cart.map((item, index) => {
                   const Icon = Icons[item.icon];
 
@@ -79,7 +76,6 @@ const Products = ({ cart, setCart }) => {
                       className="flex justify-between items-center bg-gray-50 p-4 rounded-lg mb-3"
                     >
                       <div className="flex items-center gap-3">
-                        {/* ICON */}
                         {Icon && <Icon className="text-purple-600 text-xl" />}
 
                         <div>
@@ -88,7 +84,6 @@ const Products = ({ cart, setCart }) => {
                         </div>
                       </div>
 
-                      {/* REMOVE */}
                       <button
                         onClick={() => {
                           setCart(cart.filter((_, i) => i !== index));
@@ -103,17 +98,16 @@ const Products = ({ cart, setCart }) => {
                   );
                 })}
 
-                {/* TOTAL */}
+
                 <div className="flex justify-between mt-6 font-semibold text-lg">
                   <span>Total:</span>
                   <span>${total}</span>
                 </div>
 
-                {/* CHECKOUT */}
                 <button
                   onClick={() => {
                     toast.success("Order placed successfully!");
-                    setCart([]); // ✅ CLEAR CART
+                    setCart([]); 
                   }}
                   className="w-full mt-4 bg-gradient-to-r from-purple-600 to-purple-800 text-white py-3 rounded-full hover:opacity-90 transition"
                 >

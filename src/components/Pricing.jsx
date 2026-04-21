@@ -6,7 +6,6 @@ const Pricing = () => {
   return (
     <div className="w-full bg-[#f3f4f6] py-16">
       <div className="max-w-5xl mx-auto px-4 text-center">
-        {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           Simple, Transparent Pricing
         </h2>
@@ -15,9 +14,7 @@ const Pricing = () => {
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
 
-        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          {/* Starter */}
           <div
             className="bg-white rounded-xl p-6 text-left shadow-sm 
                           hover:shadow-xl hover:-translate-y-1 
@@ -51,7 +48,6 @@ const Pricing = () => {
             </button>
           </div>
 
-          {/* Pro */}
           <div
             className="relative rounded-xl p-6 text-left text-white 
                           bg-gradient-to-r from-purple-600 to-purple-800 
@@ -59,7 +55,6 @@ const Pricing = () => {
                           hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]
                           transition duration-300"
           >
-            {/* Badge */}
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-xs px-3 py-1 rounded-full text-black">
               Most Popular
             </span>
@@ -98,7 +93,6 @@ const Pricing = () => {
             </button>
           </div>
 
-          {/* Enterprise */}
           <div
             className="bg-white rounded-xl p-6 text-left shadow-sm 
                           hover:shadow-xl hover:-translate-y-1 

@@ -8,9 +8,9 @@ const Footer = () => {
   return (
     <div className="w-full bg-[#0f172a] text-gray-300 py-16">
       <div className="max-w-5xl mx-auto px-4">
-        {/* Top Grid */}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-8">
-          {/* Logo + Description */}
+
           <div className="md:col-span-2">
             <h2 className="text-white text-2xl font-bold mb-3">DigiTools</h2>
             <p className="text-sm text-gray-400 max-w-sm">
@@ -19,7 +19,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Product */}
           <div>
             <h3 className="text-white font-semibold mb-3">Product</h3>
             <ul className="space-y-2 text-sm">
@@ -30,7 +29,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company */}
           <div>
             <h3 className="text-white font-semibold mb-3">Company</h3>
             <ul className="space-y-2 text-sm">
@@ -41,7 +39,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources */}
           <div>
             <h3 className="text-white font-semibold mb-3">Resources</h3>
             <ul className="space-y-2 text-sm">
@@ -52,7 +49,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social (same row, right side) */}
           <div>
             <h3 className="text-white font-semibold mb-3">Social Links</h3>
             <div className="flex gap-3">
@@ -71,7 +67,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom */}
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-4">
           <p>© 2026 Digitools. All rights reserved.</p>
 

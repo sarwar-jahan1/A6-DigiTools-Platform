@@ -9,7 +9,6 @@ const Navbar = ({ cart }) => {
 
         <div className="flex items-center gap-4">
 
-          {/* Cart */}
           <div className="relative">
             <FiShoppingCart className="text-xl" />
 

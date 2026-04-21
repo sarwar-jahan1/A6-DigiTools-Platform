@@ -29,7 +29,7 @@ function App() {
       <Footer />
 
       {/* Toast */}
-      <ToastContainer position="top-center" autoClose={2000} />
+      <ToastContainer position="top-center" autoClose={1000} />
     </>
   );
 }
